@@ -2,7 +2,7 @@ import Data.Char
 
 --takes an integer and gives an array of digits
 numToDigits :: Int -> [Int]
-numToDigits n = map ((\x -> x - 48) . ord) $ show n
+numToDigits n = map digitToInt $ show n
 
 fact :: Int -> Int
 fact n = product [1..n]

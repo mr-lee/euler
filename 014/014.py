@@ -11,13 +11,12 @@ for i in range(1,1000001):
       break
     except KeyError:
       n+=1
-    if(i%2):
-      i=3*i+1
-    else:
-      i=i/2
+      if(i%2):
+        i=3*i+1
+      else:
+        i=i/2
   if done:
-      continue
+    continue
   nums[init]=n
 
-#print nums
 print max(nums,key=nums.get)
