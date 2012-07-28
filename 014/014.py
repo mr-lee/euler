@@ -20,3 +20,5 @@ for i in range(1,1000001):
   nums[init]=n
 
 print max(nums,key=nums.get)
+
+#This solution is really just a brute force approach.  I'll rewrite this in haskell when I get the chance.

@@ -3,6 +3,8 @@ import Data.List
 
 p45 x = filter isTri $ intersect (pent x) $ hexa x
 
+infIntersect (a:as) (b:bs) = 
+
 isTri x = 2*x == (\y -> y*(y+1)) (round $ sqrt $ fromIntegral (2*x))
 
 tri x = map (\z -> sum [1..z]) [285..x]
